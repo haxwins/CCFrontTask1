@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">	
+	<style>
+	main{
+		margin: 40px;
+	}
+	#toolkit{
+		border: 0px;
+		border-bottom: 2px solid rgb(255, 87, 34);
+		border-style: dotted;
+		cursor: help
+	}
+	#toolkit:hover .element {
+		display: block;
+	}
+	.element{
+		position: absolute;
+		left: 80px;
+		top: 7px;
+		display: none;
+		width: 210px;
+	}
+	.element #text{
+		border-radius: 5px;
+		padding: 6px;
+		background-color: rgb(255, 87, 34);
+		color: white;
+	}
+	.element #arrow {
+		margin-left: 97px;
+		width: 0; 
+		height: 0; 
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-top: 7px solid rgb(255, 87, 34);
+	}
+	</style>
+</head>
+<body>
+	
+<main>
+	This is an awesome <span id="toolkit">
+					toolkit
+					<div class="element"> 
+						<div id="text"> It's so cool </div>
+						<div id="arrow"></div>
+					</div>
+					</span>
+</main>
+
+</body>
+</html> 
