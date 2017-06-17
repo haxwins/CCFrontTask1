@@ -8,29 +8,29 @@
 	main{
 		margin: 40px;
 	}
-	#toolkit{
+	#element{
 		border: 0px;
 		border-bottom: 2px solid rgb(255, 87, 34);
 		border-style: dotted;
 		cursor: help
 	}
-	#toolkit:hover .element {
+	#element:hover .tooltip {
 		display: block;
 	}
-	.element{
+	.tooltip{
 		position: absolute;
 		left: 80px;
 		top: 7px;
 		display: none;
 		width: 210px;
 	}
-	.element #text{
+	#text{
 		border-radius: 5px;
 		padding: 6px;
 		background-color: rgb(255, 87, 34);
 		color: white;
 	}
-	.element #arrow {
+	#arrow {
 		margin-left: 97px;
 		width: 0; 
 		height: 0; 
@@ -43,9 +43,9 @@
 <body>
 	
 <main>
-	This is an awesome <span id="toolkit">
+	This is an awesome <span id="element">
 					toolkit
-					<div class="element"> 
+					<div class="tooltip"> 
 						<div id="text"> It's so cool </div>
 						<div id="arrow"></div>
 					</div>
